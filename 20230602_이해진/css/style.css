@@ -1,0 +1,168 @@
+/* 초기화 코드*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Gowun Dodum", sans-serif;
+}
+/* 헤더 스타일 */
+header {
+  background-color: rgb(209, 184, 156);
+  height: 100vh;
+  background: url("../images/margopl.jpg") center;
+  background-size: cover;
+}
+header nav {
+  background: rgba(red, green, blue, alpha);
+  text-align: left;
+}
+header nav ul {
+  margin-left: 40px;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 15px 40px;
+  padding-top: 30px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 22px;
+}
+
+/* 콘텐츠 스타일 */
+#contents {
+  display: flex;
+  flex-direction: column;
+  /* max-width:1280px; */
+}
+
+#contents section {
+  /* border-bottom: 1px solid #bebebe; */
+  /* padding: 50px 7%; */
+}
+
+#contents section#map {
+  background: rgb(250, 250, 250);
+}
+
+#contents .content {
+  font-size: 1.2em;
+  line-height: 2.5em;
+}
+
+#contents .page-title {
+  margin-bottom: 30px;
+  font-size: 1.3em;
+  text-align: center;
+}
+#contents .page-title h2 {
+  padding: 70px 0 50px 0;
+  color: #3e3e3e;
+}
+
+/* #contents .content .photo {
+    display: none; 
+} */
+
+/* 푸터 스타일 */
+footer {
+  background-color: #222;
+  text-align: center;
+  padding: 20px;
+  color: #eee;
+  font-size: 1.5em;
+}
+
+/* 태블릿 모드 - 768px 이상 */
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  #contents {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #contents section {
+    width: 50%;
+  }
+  #contents section#map {
+    border-left: 1px solid #ccc;
+  }
+  #contents section#choice {
+    width: 100%;
+  }
+}
+
+/* PC 모드 - 960px 이상 */
+@media screen and (min-width: 960px) {
+  #contents section {
+    /* padding:50px 5%; */
+  }
+
+  #contents .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  #contents .content article {
+    width:100%;
+  }
+  .wrapper {
+    padding:  100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #contents .content .photo {
+    display: block; /* 이미지 보이게함 */
+    /* height: 500px; */
+    width: 38%;
+    /* border: 1px solid; */
+    margin-bottom:120px;
+  }
+
+  #contents .content .text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 50%;
+    margin-bottom: 60px;
+    font-size: 30px;
+    padding-top: 100px;
+    padding-left: 150px;
+    line-height: 90px;
+    color: #3e3e3e;
+  }
+
+  #contents .content .photo img {
+    text-align: left;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 0.1px solid rgb(192, 192, 192);
+    /* object-position: center; */
+  }
+  #contents #choice {
+    display: flex;
+  }
+  #contents .content #choice .wrapper {
+    width: 50%;
+  }
+
+  #contents .content .photo1 {
+    display: block; /* 이미지 보이게함 */
+    /* height: 500px; */
+    width: 100%;
+    /* border: 1px solid; */
+    margin-bottom: 60px;
+  }
+}

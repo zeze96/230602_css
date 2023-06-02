@@ -1,0 +1,107 @@
+#sc_intro_wrapper .wrapper input {
+    display: none;
+}
+
+
+#sc_intro_wrapper .wrapper input~div {
+    display: none;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(1):checked~div:nth-of-type(1) {
+    display: block;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(2):checked~div:nth-of-type(2) {
+    display: block;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(3):checked~div:nth-of-type(3) {
+    display: block;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(4):checked~div:nth-of-type(4) {
+    display: block;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(5):checked~div:nth-of-type(5) {
+    display: block;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(6):checked~div:nth-of-type(6) {
+    display: block;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(7):checked~div:nth-of-type(7) {
+    display: block;
+}
+
+#sc_intro_wrapper {
+    padding-top : 80px
+}
+
+#sc_intro_wrapper .wrapper section {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+#sc_intro_wrapper .wrapper section label {    
+    border: 1px #eee solid;
+    font-size: 1.1em;
+    color : #555 ;
+    padding : 15px 35px ;
+    margin : 0 -1px;
+    background:  white;    
+}
+
+#sc_intro_wrapper .wrapper section label:hover {
+    background: #9ec5ef;
+    color : white;
+    border :#9ec5ef 1px solid;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(1):checked~section>label:nth-child(1) {
+    background :#106aca;
+    color : #fff;
+    border :#106aca 1px solid;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(2):checked~section>label:nth-child(2) {
+    background :#106aca;
+    color : #fff;
+    border :#106aca 1px solid;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(3):checked~section>label:nth-child(3) {
+    background :#106aca;
+    color : #fff;
+    border :#106aca 1px solid;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(4):checked~section>label:nth-child(4) {
+    background :#106aca;
+    color : #fff;
+    border :#106aca 1px solid;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(5):checked~section>label:nth-child(5) {
+    background :#106aca;
+    color : #fff;
+    border :#106aca 1px solid;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(6):checked~section>label:nth-child(6) {
+    background :#106aca;
+    color : #fff;
+    border :#106aca 1px solid;
+}
+
+#sc_intro_wrapper .wrapper input:nth-of-type(7):checked~section>label:nth-child(7) {
+    background :#106aca;
+    color : #fff;
+    border :#9ec5ef 1px solid;
+}
+
+.wrapper div img {
+    width: 100%;
+}

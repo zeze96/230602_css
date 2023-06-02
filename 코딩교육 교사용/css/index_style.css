@@ -1,0 +1,169 @@
+/* 초기화 코드*/
+* {margin:0; padding:0; box-sizing: border-box;}
+a {text-decoration: none; color:#fff}
+li {list-style: none;}
+
+/* 헤더 스타일 */
+header {background:#34495e;}
+
+header nav a#toggle {
+    display:block; /* 모바일 모드에서 토글 메뉴 보임 */
+    background:#283744;
+    padding: 10px;
+}
+
+header  nav  ul  li {
+    text-align:center;
+    padding:12px;
+    border-bottom: 1px solid #576979;
+    font-size:1.2em; font-weight:bold;
+}
+
+header nav ul {
+    display: none; /*모바일 모드에서 주메뉴 숨김*/
+}
+
+/* 반응형웹 PC 모드 _ 네비게이션  */
+@media screen and (min-width:768px) {
+    header nav a#toggle {
+        display: none; /* PC 모드에서 토글메뉴 숨김 */
+    }
+    header  nav ul {
+        display:block !important;  /* PC 모드에서 주메뉴 보여줌 */
+        height:80px;
+        max-width:1280px;
+        margin:0 auto;  
+    }
+    header nav ul li {
+        float:left;
+        width:25%;
+        height:80px;
+        border-bottom:0px;
+        border-right:1px solid #576979;
+        line-height:60px;
+    }
+    header nav ul li:last-child {
+        border-right: 0;
+    }
+}
+
+/* 섹션 공통 스타일 */
+section:nth-child(2n+1) {
+    background-color:#f3f3f4 ;
+}
+section .wrapper {
+    max-width:1280px; 
+    margin:0 auto;
+    padding:60px 40px;
+}
+section .section_title h3 {
+    text-align: center;
+    font-size:1.8em;
+}
+section .section_contents {
+    margin-top:60px;
+}
+
+/* 코딩이란 */ 
+#about .section_contents p {
+    color: #ff6600;
+    font-size:1.4em;
+    font-style: italic;
+    text-align:center;
+    line-height:1.8;
+    font-weight:bold;
+}
+#about .section_contents p:nth-child(3) {
+    color: gray;
+    font-size:1.1em;
+}
+
+/*  왜 코딩교육인가  */
+#coding_why  .section_contents .contents_img {
+    display:none; /* 이미지 숨김 */
+}
+
+#coding_why .section_contents p {
+    font-size:1.2em;
+    line-height: 1.8;
+}
+
+/* 반응형웹 PC 모드 _ 왜 코딩 교육인가  */
+@media screen and (min-width:768px) {
+    #coding_why  .section_contents .contents_img {
+        display:block; /* 이미지 보임 */
+        /* width:33%; */
+        flex:1 1 0; /* 플렉스 적용시 자식 요소에 사이즈 지정 */
+        text-align:center;
+    }
+    #coding_why  .section_contents .contents_text {
+        /* width:67%; */
+        flex:2 2 0; /* 플렉스 적용시 자식 요소에 사이즈 지정 */
+        margin-right: 30px;
+    }
+
+    #coding_why  .section_contents .contents_img img {
+        max-width:230px; /*이미지 최대 사이즈 */
+    }
+    #coding_why  .section_contents {
+        display:flex;
+    }
+}
+
+/*  코딩 프로그램  */
+#coding_pro .section_contents .program{
+    border:1px solid black;
+    padding:30px;
+    background-color:#fff;
+    margin-bottom:20px;
+}
+#coding_pro .section_contents .program h4 {
+    font-size:1.3em;
+    margin-bottom:20px;
+}
+
+/* 반응형웹 PC 모드 _ 코딩 프로그램 섹션  */
+@media screen and (min-width:768px) {
+    #coding_pro .section_contents {
+        display: flex; 
+        justify-content: space-between;
+    }
+    #coding_pro .section_contents .program {
+        width:22%;
+    }
+}
+
+/* 푸터 */
+footer {
+    background-color:#34495e;
+    color:#fff;
+}
+
+footer .wrapper {
+    max-width:1280px; 
+    margin:0 auto;
+    padding:60px 40px;
+}
+footer #sns {
+    margin-top:50px;
+}
+footer #sns a {
+    margin-right:28px;
+}
+footer #sns a:last-child {
+    margin-right:0;
+}
+
+/* 반응형웹 PC 모드 _ 푸터 */
+@media screen and (min-width:768px) {
+    footer .wrapper {
+        display:flex;  /* 플렉스 적용, 가로 정렬 */
+    }
+    footer #contact {
+        width:60%;
+    }
+    footer #sns {
+        width:40%;
+        text-align: right;
+    }
+}

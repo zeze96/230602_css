@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영진직업전문학교</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css?_cacheOverride=1684634858144" />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <video class="bg-video" muted autoplay playsinline loop>
+        <source src="video/yjjob.mp4" />
+      </video>
+      <a href="#" class="btn"> 상담신청 하기<i class="fas fa-chevron-right"></i> </a>
+    </header>
+
+    <nav>
+      <div class="nav-inner">
+        <a class="menu-btn" href="#">
+          <i class="fas fa-bars fa-2x"></i>
+        </a>
+
+        <img class="logo" src="images/logo.png" alt="yjjob" />
+
+        <a class="search" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <div class="toggle-menu">
+      <div class="menu-wrapper">
+        <ul class="main-menu">
+          <li>
+            <h2 class="main-menu-title">모집과정</h2>
+            <ul class="sub-menu">
+              <li>현재모집중인과정</li>
+              <li>대구국비지원 진행중인과정</li>
+              <li>연간모집과정</li>
+              <li>국민내일배움카드</li>
+              <li>국민취업지원제도</li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="main-menu-title">입학상담</h2>
+            <ul class="sub-menu">
+              <li>온라인접수</li>
+              <li>자주하는 질문</li>
+              <li>입학상담</li>
+              <li>접수상태확인</li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="main-menu-title">과정소개</h2>
+            <ul class="sub-menu">
+              <li>IT•SW</li>
+              <li>전기공사</li>
+              <li>기계설계</li>
+              <li>디자인</li>
+              <li>용접</li>
+              <li>공조냉동</li>
+              <li>조경</li>
+              <li>가구/공예</li>
+              <li>경영회계</li>
+              <li>패션봉제</li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="main-menu-title">취업센터</h2>
+            <ul class="sub-menu">
+              <li>업체 채용 소식</li>
+              <li>업무 협약 소식</li>
+              <li>취업 센터 소식</li>
+              <li>취업•수료 후기</li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="main-menu-title">커뮤니티</h2>
+            <ul class="sub-menu">
+              <li>영진소식</li>
+              <li>YJ 재능봉사단</li>
+              <li>직종소개</li>
+              <li>2023년 제12회 송암전</li>
+              <li>역대 송암전 수상작</li>
+              <li>학교에 바란다</li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="main-menu-title">학교소개</h2>
+            <ul class="sub-menu">
+              <li>인사말</li>
+              <li>조직도 및 연혁</li>
+              <li>교육시스템</li>
+              <li>시설안내</li>
+              <li>교직원 소개</li>
+              <li>오시는 길</li>
+              <li>교수 채용(상시)</li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="main-menu-title">회원메뉴</h2>
+            <ul class="sub-menu">
+              <li>설문조사</li>
+              <li>NCS평가</li>
+              <li>시험응시</li>
+              <li>회원가입</li>
+              <li>로그인</li>
+              <li>아이디/비밀번호 찾기</li>
+              <li>사이트맵</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="maxwidth-container">
+      <h2 class="section-title">portpolio</h2>
+      <section class="portfolio">
+        <div>
+          <img src="images/it-3.png" alt="" />
+          <h3>영화관 관리 플랫폼(웹,앱)</h3>
+          <p>애플리케이션 설계, 인터페이스 구현, 서버 프로그램 구현, SQL 활용, 통합 구현 등</p>
+          <a href="#">더 알아보기<i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+          <img src="images/ki-3.gif" alt="" />
+          <h3>CAD/CAM 3D기계설계가공</h3>
+          <p>동력전달요소 설계, 체결요소 설계, 3D형상모델링 작업, 3D형상모델링 검토, 도면 분석</p>
+          <a href="#">더 알아보기<i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+          <img src="images/yo-2.png" alt="" />
+          <h3>CO2, TIG, 피복아크용접사 양성</h3>
+          <p>CO2 용접, TIG 용접, 가스절단, 플라즈마 아크절단</p>
+          <a href="#">더 알아보기<i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+          <img src="images/fa-1.png" alt="" />
+          <h3>스마트패션디자인</h3>
+          <p>패션디자인 기획, 패션상품 개발구상, 패션디자인 개발, 패션상품 시제품 개발</p>
+          <a href="#">더 알아보기<i class="fas fa-chevron-right"></i></a>
+        </div>
+      </section>
+
+      <h2 class="section-title">COURSE</h2>
+      <section class="course">
+        <ul class="course-menu">
+          <li>전체과정</li>
+          <li>IT•SW</li>
+          <li>전기PLC</li>
+          <li>기계설계</li>
+          <li>디자인</li>
+          <li>용접</li>
+          <li>공조냉동</li>
+          <li>조경/중장비</li>
+          <li>가구/공예</li>
+          <li>경영회계</li>
+          <li>패션봉제</li>
+          <li>인테리어</li>
+        </ul>
+
+        <swiper-container class="mySwiper" init="false">
+          <swiper-slide><img src="images/design.png" alt="" /></swiper-slide>
+          <swiper-slide><img src="images/electric.png" /></swiper-slide>
+          <swiper-slide><img src="images/furniture_craft.png" /></swiper-slide>
+          <swiper-slide><img src="images/information.png" /></swiper-slide>
+          <swiper-slide><img src="images/landscape.png" alt="" /></swiper-slide>
+          <swiper-slide><img src="images/mechanic.png" alt="" /></swiper-slide>
+          <swiper-slide><img src="images/welding.png" alt="" /></swiper-slide>
+          <swiper-slide><img src="images/fashion.png" alt="" /></swiper-slide>
+        </swiper-container>
+      </section>
+
+      <section class="k-digital">
+        <div class="content">
+          <h2>빅데이터 분석과 UI구현을 위한 자바(Java), 파이썬 (Python) 개발자 모집중</h2>
+          <p>
+            대용량의 데이터로부터 빅데이터 분석을 통해 유용한 정보를 찾고 목적에 따라 UI구현기술을 사용하여 보다 정확하고 효과적이게 데이터를 전달하는 전문력을
+            가질 수 있습니다.
+          </p>
+          <a href="#" class="btn"> 신청하러 가기<i class="fas fa-chevron-right"></i> </a>
+        </div>
+      </section>
+
+      <section class="follow">
+        <a href="https://www.facebook.com/yjjob/" alt="facebook">
+          <img src="http://www.yjjob.or.kr/data/banner/wzVEfAWEyQqQwSSDtBVB_1582087115.png" alt="" />
+        </a>
+        <a href="http://pf.kakao.com/_bItTxd" alt="kakaotalk">
+          <img src="http://www.yjjob.or.kr/data/banner/UDqigZGEW5doZh0KVkyK_1582087165.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com/yjjob8877" alt="instagram">
+          <img src="http://www.yjjob.or.kr/data/banner/CL7glr7BqenPNRABVpf6_1603411157.png" alt="" />
+        </a>
+        <a href="https://blog.naver.com/yjjob8877" alt="naverblog">
+          <img src="http://www.yjjob.or.kr/data/banner/i7YkK4s8jij9rqZyjvx8_1582100733.png" alt="" />
+        </a>
+        <a href="https://www.youtube.com/c/yjjob/videos" alt="youtube">
+          <img src="http://www.yjjob.or.kr/data/banner/ihbgXxfvw9YQsPHklVhA_1679361241.png" alt="" />
+        </a>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <ul class="copyright">
+          <li>개인정보보호정책</li>
+          <li>메일주소무단수집거부</li>
+        </ul>
+        <p class="contact">
+          회사명 : 영진직업전문학교 대표자 : 곽승호, 차영숙 cha8877@hanmail.net Tel : 053-983-8877 Fax : 053-722-2423 개인정보보호책임자 : 이동석
+          cha8877@hanmail.net Tel : 053-983-8877 사업자번호 : 502-95-07029<br />
+          701-835 대구광역시 동구 화랑로 525(용계동), 조경실습장 : 대구 동구 도동 806-21<br />
+          copyright © 대구국비지원 무료교육센터 영진직업전문학교. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <script>
+      const swiperEl = document.querySelector("swiper-container");
+      Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          clickable: true,
+        },
+        breakpoints: {
+          501: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          785: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+      swiperEl.initialize();
+    </script>
+  </body>
+</html>
